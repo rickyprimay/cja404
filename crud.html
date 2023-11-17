@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Jam Academy</title>
+    <link rel="stylesheet" href="css/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="img/yashxjajHJBhashda21.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://flowbite.com/" class="flex items-center">
+                <img src="img/yashxjajHJBhashda21.png" class="h-8 mr-3" alt="HMTI Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CJA</span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><a href="https://www.linkedin.com/in/ricky-primayuda-putra-735220259/">LinkedIn</a></button>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class=" p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="index.html"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                            aria-current="page">Installasi</a>
+                    </li>
+                    <li>
+                        <a href="model.html"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Membuat Model dan Migration</a>
+                    </li>
+                    <li>
+                        <a href="crud.html"
+                            class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">CRUD</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
+        <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
+            <article
+                class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+                <header class="mb-4 lg:mb-6 not-format">
+                    <div class="flex items-center mt-8 not-italic">
+                        <img class="mr-4 w-16 rounded-full" src="img/mes87876261.png" alt="Ricky Primayuda Putra">
+                        <div>
+                            <a href="#" rel="author" class="text-xl font-bold text-gray-900 dark:text-white">Ricky
+                                Primayuda Putra</a>
+                            <p class="text-base text-gray-500 dark:text-gray-400">Head of Software Department HMTI</p>
+                        </div>
+                    </div>
+
+                        <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
+                            <h2 id="accordion-color-heading-1">
+                              <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-1" aria-expanded="false" aria-controls="accordion-color-body-1">
+                                <span>Daftar isi</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                </svg>
+                              </button>
+                            </h2>
+                            <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+                              <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><a href="#la-1">Langkah 1 - Membuat Controller Post</a></p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><a href="#la-2">Langkah 2 - Membuat Route Post</a></p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><a href="#la-3">Langkah 3 - Membuat View dan Menampilkan Data</a></p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><a href="#la-4">Langkah 4 - Uji coba menampilkan Data</a></p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><a href="#la-5">Langkah 5 - Menambahkan Method Create dan Store</a></p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><a href="#la-6">Langkah 6 - Membuat View Form Create</a></p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><a href="#la-7">Langkah 7 - Uji Coba Insert Data Post</a></p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><a href="#la-8">Langkah 8 - Menambahkan Method Show</a></p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><a href="#la-9">Langkah 9 - Uji Coba Menampilkan Detail Data Post</a></p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><a href="#la-10">Langkah 10 - Uji Coba Menampilkan Detail Data Post</a></p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><a href="#la-11">Langkah 11 - Menambahkan Method Edit dan Update</a></p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><a href="#la-12">Langkah 12 - Membuat View Form Update</a></p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><a href="#la-13">Langkah 13 - Uji Coba Edit dan Update Data</a></p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><a href="#la-14">Langkah 14 - Menambahkan Method Destroy</a></p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><a href="#la-15">Langkah 15 - Uji Coba Delete Data</a></p>
+                              </div>
+                            </div>
+                            <div class="border-b border-gray-200 dark:border-gray-700"></div>
+                        </div>
+                        <br>
+                    <h1
+                        class="text-center text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
+                        Membuat Create Read Update Delete</h1>
+                </header>
+                <p>Selanjutnya kita akan belajar bagaimana cara Menambahkan data, Menampilkan data, Meng-update data, Menghapus data dari database di dalam <b>Laravel</b>. Dan untuk UI atau User Interface
+                yang akan kita gunakan adalah <b>Bootstrap</b>, sehingga tampilan nya bisa lebih bagus dan cepat dibandingkan kita harus membuat nya secara manual.</p>
+                <h1 id="la-1" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 1 - Membuat Controller Post</h1>
+                <p>Hal pertama yang harus kita lakukan adalah membuat <em>Controller-nya</em> terlebih dahulu. <em>Controller</em> digunakan untuk menghubungkan antara <em>Model</em> dengan <em>View</em> dan biasanya <em>Controller</em>
+                akan berisi logika-logika dari aplikasi yang dibangun.</p>
+                <p>Silahkan jalankan perintah berikut ini di dalam terminal/CMD dan pastikan sudah berada di dalam project <b>Laravel</b>-nya.</p>
+                <pre class="bg-black"><code class="language-html text-white">php artisan <span class="text-yellow-300">make</span>:controller PostController</code></pre>
+                <p>Jika perintah di atas berhasil dijalankan, maka kita akan mendapatkan file controller baru yang ada berada di dalam folder</p>
+                <p><span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">app/Http/Controllers/
+                    PostController.php</span></p>
+                <p>Silahkan buka file tersebut dan ubah kode-nya menjadi seperti berikut ini.</p>
+                <pre class="bg-black"><code class="language-html text-white">&lt;?php
+
+namespace App\Http\Controllers;
+
+//import Model "Post
+use App\Models\Post;
+
+//return type View
+use Illuminate\View\View;
+
+use Illuminate\Http\Request;
+
+class PostController extends Controller
+{
+    /**
+     * index
+     *
+     * @return View
+     */
+    public function index(): View
+    {
+        //get posts
+        $posts = Post::latest()->paginate(5);
+
+        //render view with posts
+        return view('posts.index', compact('posts'));
+    }
+}</code></pre>
+                <p>Dari perubahan kode di atas, pertama kita import <em>Model</em> <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">Post</span>
+                di dalam <em>controller</em>.</p>
+                <pre class="bg-black"><code class="language-html text-white">//import Model "Post
+use App\Models\Post;</code></pre>
+                <p>Kemudian kita import return Type <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">View</span>.</p>
+                <pre class="bg-black"><code class="language-html text-white">//return type View
+use Illuminate\View\View;</code></pre>
+                <p>Setelah itu, di dalam <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">PostController</span> kita membuat method baru dengan nama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">index</span>.</p>
+                <pre class="bg-black"><code class="language-html text-white">public function index(): View
+{
+
+    //...
+    
+}</code></pre>
+                <p>Di dalam <em>method</em> tersebut, pertama kita membuat <em>variable</em> baru dengan nama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">$posts</span>
+                dan berisi <em>Model</em> <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">Post</span> yang mengambil data dari database.</p>
+                <p>Kemudian kita memanggil <em>method</em> <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">latest</span> yang berfungsi untuk mengurutkan data yang akan di tampilkan berdasarkan yang paling terbaru dan membatasi data yang akan ditampilkan menggunakan <em>method</em>
+                    <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">paginate</span> sejumlah 5.</p>
+                <pre class="bg-black"><code class="language-html text-white">//get posts
+$posts = Post::latest()->paginate(5);</code></pre>
+                <p>Setelah data berhasil ditampung dalam di dalam <em>variable</em> tersebut ke dalam view menggunakan method
+                    <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">compact</span>,</p>
+                <pre class="bg-black"><code class="language-html text-white">//render view with posts
+return view('posts.index', compact('posts'));</code></pre>
+                <p>Di atas kita melakukan render ke dalam view <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">resources/posts/index.blade.php</span>
+                dengan mengirimkan <em>variable</em> <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">$posts</span>. Jika teman-teman cek sekarang, file view
+                tersebut masih belum ada, karena kita akan membuatnya setelah ini.</p>
+                <h1 id="la-2" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 2 - Membuat Route Post</h1>
+                <p>Agar bisa mengakses <em>controller</em> melalui URL <em>browser</em>, maka kita perlu membuatkan route-nya terlebih dahulu. Jadi konsepnya kita akan memanggil
+                route, kemudian route memanggil <em>controller</em> dan <em>controller</em> memanggil view.</p>
+                <p>Kurang lebih nya alur nya seperti berikut ini.</p>
+                <img src="img/nhsahuywgdsb.png">
+                <p>Untuk membuat Route, silahkan buka file <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">routes/web.php</span>, kemudian ubah semua kode-nya menjadi seperti berikut ini.</p>
+                <pre class="bg-black"><code class="language-html text-white">&lt;?php
+
+use Illuminate\Support\Facades\Route;
+
+//route resource
+Route::resource('/posts', \App\Http\Controllers\PostController::class);</code></pre>
+                <p>Dari perubahan kode di atas, kita menambahkan route baru dengan path <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">/posts</span>
+                dan jika di perhatikan, kita menggunakan route dengan jenis <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">resource</span>. 
+                Artinya apa? yaitu <em>route-route</em> untuk proses <b>CRUD</b> akan di generate secara otomatis oleh <b>Laravel</b>, seperti <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">index</span>, 
+                <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">create</span>, <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">store</span>,
+                <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">show</span>, <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">edit</span>, 
+                <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">update</span>, dan <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">destroy</span>. dibandingkan kita harus membuatnya secara manual satu-persatu.</p>
+                <p>Untuk memastikan apakah penambahan route kita berhasil, kita bisa menjalankan perintah berikut ini dalam terminal/CMD dan pastikan sudah berada di dalam project <b>Laravel</b>-nya.</p>
+                <pre class="bg-black"><code class="language-html text-white">php artisan route:list</code></pre>
+                <img src="img/nhhsasyadgygwds.jpeg">
+                <h1 id="la-3" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 3 - Membuat View dan Menampilkan Data</h1>
+                <p>Setelah <em>controller</em> dan route berhasil dibuat, maka sekarang kita akan lanjutkan belajar membuat <em>view</em> yang digunakan untuk menampilkan data.</p>
+                <p>Silahkan buat folder baru dengan nama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">posts</span> di dalam <em>folder</em> <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">resources/views</span>
+                , kemudian di dalam folder <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">posts</span> tersebut buatlah file baru dengan nama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">index.blade.php</span>
+                dan masukan kode berikut ini di dalamnya.</p>
+                <pre class="bg-black"><code class="language-html text-white">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+    &lt;title&gt;Code Jam Academy&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"&gt;
+    &lt;link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"&gt;
+&lt;/head&gt;
+&lt;body style="background: lightgray"&gt;
+
+&lt;div class="container mt-5"&gt;
+    &lt;div class="row"&gt;
+            &lt;div class="col-md-12"&gt;
+                &lt;div&gt;
+                    &lt;h3 class="text-center my-4"&gt;Code Jam Academy - Laravel 10&lt;/h3&gt;      
+                    &lt;hr&gt;
+                &lt;/div&gt;
+                &lt;div class="card border-0 shadow-sm rounded"&gt;
+                    &lt;div class="card-body"&gt;
+                        &lt;a href="{{ route('posts.create') }}" class="btn btn-md btn-success mb-3"&gt;TAMBAH POST&lt;/a&gt;
+                        &lt;table class="table table-bordered"&gt;
+                            &lt;thead&gt;
+                              &lt;tr&gt;
+                                &lt;th scope="col"&gt;GAMBAR&lt;/th&gt;
+                                &lt;th scope="col"&gt;JUDUL&lt;/th&gt;
+                                &lt;th scope="col"&gt;CONTENT&lt;/th&gt;
+                                &lt;th scope="col"&gt;AKSI&lt;/th&gt;
+                              &lt;/tr&gt;
+                            &lt;/thead&gt;
+                            &lt;tbody&gt;
+                              @forelse ($posts as $post)
+                                &lt;tr&gt;
+                                    &lt;td class="text-center"&gt;
+                                        &lt;img src="{{ asset('/storage/posts/'.$post->image) }}" class="rounded" style="width: 150px"&gt;
+                                    &lt;/td&gt;
+                                    &lt;td&gt;{{ $post->title }}&lt;/td&gt;
+                                    &lt;td&gt;{!! $post->content !!}&lt;/td&gt;
+                                    &lt;td class="text-center"&gt;
+                                        &lt;form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('posts.destroy', $post->id) }}" method="POST"&gt;
+                                            &lt;a href="{{ route('posts.show', $post->id) }}" class="btn btn-sm btn-dark"&gt;SHOW&lt;/a&gt;
+                                            &lt;a href="{{ route('posts.edit', $post->id) }}" class="btn btn-sm btn-primary"&gt;EDIT&lt;/a&gt;
+                                            @csrf
+                                            @method('DELETE')
+                                            &lt;button type="submit" class="btn btn-sm btn-danger"&gt;HAPUS&lt;/button&gt;
+                                        &lt;/form&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                              @empty
+                                  &lt;div class="alert alert-danger"&gt;
+                                      Data Post belum Tersedia.
+                                  &lt;/div&gt;
+                              @endforelse
+                            &lt;/tbody&gt;
+                          &lt;/table&gt;  
+                          {{ $posts->links() }}
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+            
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"&gt;&lt;/script&gt;
+    &lt;script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"&gt;&lt;/script&gt;
+
+    &lt;script&gt;
+        @if(session()->has('success'))
+                
+            toastr.success('{{ session('success') }}', 'BERHASIL!'); 
+
+        @elseif(session()->has('error'))
+
+            toastr.error('{{ session('error') }}', 'GAGAL!'); 
+                
+        @endif
+    &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <p>Dari penambahan kode di atas, untuk menampilkan data kita bisa menggunakan sintaks <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">@forelse</span>.</p>
+                <pre class="bg-black"><code class="language-html text-white">@forelse ($posts as $post)
+
+//tampilkan data
+ 	
+@empty
+
+	//Data Post belum Tersedia.
+	
+@endforelse</code></pre>
+                <p>Kemudian untuk menampilkan pagination, kita bisa memanggil method <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">links</span>,
+                Kurang lebih seperti ini.</p>
+                <pre class="bg-black"><code class="language-html text-white">{{ $posts->links() }}</code></pre>
+                <p>Pada bagian <em>JavaScript</em>, kita menambahkan kondisi untuk memeriksa sebuah session flash, yang nantinya difungsikan untuk menampilkan alert atau notifikasi
+                setelah berhasil melakukan proses <em>insert</em>, update, dan delete data. Dan library yang kita gunakan adalah <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">toast.js .</span></p>
+                <pre class="bg-black"><code class="language-html text-white">&lt;script&gt;>
+    @if(session()->has('success'))
+
+        toastr.success('{{ session('success') }}', 'BERHASIL!'); 
+
+    @elseif(session()->has('error'))
+
+        toastr.error('{{ session('error') }}', 'GAGAL!'); 
+
+    @endif
+&lt;script&gt;</code></pre>
+                <h1 id="la-4" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 4 - Uji Coba Menampilkan Data</h1>
+                <p>Sekarang silahkan jalankan projectnya dengan mengakses <a href="http://localhost:8080/posts">http://localhost:8080/posts</a>
+                di dalam <em>browser</em>, jika berhasil maka hasilnya kurang lebih akan seperti ini</p>
+                <img src="img/najnwjdsmaw.png">
+                <p>Di atas masih menampilkan pesan <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">Data Posts belum Tersedia</span>
+                , itu karena memang kita masih belum memiliki data apapun di <em>table</em><span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">posts</span>.</p>
+
+                <h1 id="la-5" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 5 - Membuat Method Create dan Store</h1>
+                <p>Selanjutnya kita akan membuat 2 method di dalam controller, apa saja <em>method</em> tersebut? yaitu :</p>
+                <ul>
+                    <li class=""><span class="text-red-600">function create</span> - method yang digunakan untuk menampilkan halaman form tambah data.</li>
+                    <li class=""><span class="text-red-600">function store</span> - method yang digunakan untuk memproses data ke dalam database dan juga melakukan upload gambar.</li>
+                </ul>
+                <p>Sekarang, silahkan buka file <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">app/Http/Controller/PostController.php</span>
+                , kemudian ubah kode-nya menjadi seperti berikut ini.</p>
+                <pre class="bg-black"><code class="language-html text-white">&lt;?php
+
+namespace App\Http\Controllers;
+
+//import Model "Post
+use App\Models\Post;
+
+//return type View
+use Illuminate\View\View;
+
+//return type redirectResponse
+use Illuminate\Http\RedirectResponse;
+
+use Illuminate\Http\Request;
+
+class PostController extends Controller
+{
+    /**
+     * index
+     *
+     * @return View
+     */
+    public function index(): View
+    {
+        //get posts
+        $posts = Post::latest()->paginate(5);
+
+        //render view with posts
+        return view('posts.index', compact('posts'));
+    }
+
+    /**
+     * create
+     *
+     * @return View
+     */
+    public function create(): View
+    {
+        return view('posts.create');
+    }
+
+    /**
+     * store
+     *
+     * @param  mixed $request
+     * @return RedirectResponse
+     */
+    public function store(Request $request): RedirectResponse
+    {
+        //validate form
+        $this->validate($request, [
+            'image'     => 'required|image|mimes:jpeg,jpg,png|max:2048',
+            'title'     => 'required|min:5',
+            'content'   => 'required|min:10'
+        ]);
+
+        //upload image
+        $image = $request->file('image');
+        $image->storeAs('public/posts', $image->hashName());
+
+        //create post
+        Post::create([
+            'image'     => $image->hashName(),
+            'title'     => $request->title,
+            'content'   => $request->content
+        ]);
+
+        //redirect to index
+        return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Disimpan!']);
+    }
+}</code></pre>
+                <p>Dari perubahan kode di atas, pertama kita import return type <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">redirectResponse</span></p>
+                <pre class="bg-black"><code class="language-html text-white">//return type redirectResponse
+use Illuminate\Http\RedirectResponse;</code></pre>
+                <p>Kemudian kita menambahkan method baru yang bernama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">create</span>.</p>
+                <p>Di dalam method tersebut kita melakukan return dengan mengarahkan ke dalam sebuah <em>view</em> yang nanti akan kita buat, yaitu
+                    <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">resources/views/posts/create.blade.php</span>. Jika dicari, file tersebut tidak ada. Karena kita akan membuatnya nanti.</p>
+                    <pre class="bg-black"><code class="language-html text-white">return view('posts.create');</code></pre>
+                <p>Setelah itu, kita buat <em>method</em> yang bernama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">store</span>. method ini akan kita gunakan untuk memproses data dan memasukan-nya ke dalam database
+                 dan sekaligus membuat fungsi untuk melakukan upload gambar</p>
+                <p>Di dalam method tersebut, pertama tama kita membuat validasi terlebih dahulu. Fungsinya untuk memastikan data yang dikirimkan sudah sesuai dengan yang diharapkan.</p>
+                <pre class="bg-black"><code class="language-html text-white">//validate form
+$this->validate($request, [
+    'image'     => 'required|image|mimes:jpeg,jpg,png|max:2048',
+    'title'     => 'required|min:5',
+    'content'   => 'required|min:10'
+]);</code></pre>
+                <p>Dari validasi di atas, kurang lebih penjelasannya seperti berikut ini.</p>
+                <div class="relative overflow-x-auto">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-white-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 text-gray-700 dark:text-white">
+                                    KEY
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-gray-700 dark:text-white">
+                                    VALIDATION
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-gray-700 dark:text-white">
+                                    KETERANGAN
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Image
+                                </th>
+                                <td class="px-6 py-4">
+                                    required
+                                </td>
+                                <td class="px-6 py-4">
+                                    field wajib diisi
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    
+                                </th>
+                                <td class="px-6 py-4">
+                                    image
+                                </td>
+                                <td class="px-6 py-4">
+                                    field harus berupa gambar
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    
+                                </th>
+                                <td class="px-6 py-4">
+                                    mimes:jpeg,jpg,png
+                                </td>
+                                <td class="px-6 py-4">
+                                    files harus memiliki extensi jpeg,jpg,png
+                                </td>
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    
+                                </th>
+                                <td class="px-6 py-4">
+                                    max:2048
+                                </td>
+                                <td class="px-6 py-4">
+                                    files maksimal berukuran 2048 Kb / 2Mb
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    title
+                                </th>
+                                <td class="px-6 py-4">
+                                    required
+                                </td>
+                                <td class="px-6 py-4">
+                                    files wajib diisi
+                                </td>
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    
+                                </th>
+                                <td class="px-6 py-4">
+                                    min:5
+                                </td>
+                                <td class="px-6 py-4">
+                                    files minimal memiliki 5 huruf/karakter
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    content
+                                </th>
+                                <td class="px-6 py-4">
+                                    required
+                                </td>
+                                <td class="px-6 py-4">
+                                    files wajib diisi
+                                </td>
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    
+                                </th>
+                                <td class="px-6 py-4">
+                                    min:10
+                                </td>
+                                <td class="px-6 py-4">
+                                    files minimal memiliki 10 huruf/karakter
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Jika data yang dikirimkan sudah sesuai dengan validasi di atas, maka langkah selanjutnya adalah melakukan upload gambar</p>
+                <pre class="bg-black"><code class="language-html text-white">//upload image
+$image = $request->file('image');
+$image->storeAs('public/posts', $image->hashName());</code></pre>
+                <p>Di atas, kita membuat variable baru dengan nama $image dan berisi request dengan jenis file yang bernama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">image</span>
+                . Request tersebut merupakan file yang dikirim dari form.</p>
+                <p>Setelah itu, kita upload gambar tersebut menggunakan method <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">storeAs</span> bawaan dari <b>Laravel</b> dan kita akan menyimpannya ke dalam folder
+                    <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">storage/app/public/posts</span>dan nama dari file tersebut akan di random menggunakan method <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">hashName()</span>.</p>
+                <p>Jika gambar sudah berhasil diupload, langkah selanjutnya adalah melakukan insert data ke dalam database, yaitu ke dalam table <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">posts</span> dan disini kita memanfaatkan Eloquent dan Model untuk proses insert data-nya</p>
+                <pre class="bg-black"><code class="language-html text-white">//create post
+Post::create([
+    'image'     => $image->hashName(),
+    'title'     => $request->title,
+    'content'   => $request->content
+]);</code></pre>
+                <p>Jika proses insert data berhasil dilakukan, maka kita akan redirect atau arahkan ke dalam route yang bernama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">posts.index</span>
+                dengan memberikan session flash yang memiliki key <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">success</span> dan isinya adalah <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">Data Berhasil Disimpan!</span></p>
+                <pre class="bg-black"><code class="language-html text-white">//redirect to index
+return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Disimpan!']);</code></pre>
+                <h1 id="la-6" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 6 - Membuat View Form Create</h1>
+                <p>Setelah berhasil membuat 2 <em>method</em>, di dalam controller, maka kita bisa lanjutkan membuat view untuk menampilkan halaman tambah data post.</p>
+                <p>Silahkan buat file baru dengan nama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">create.blade.php</span>
+                di dalam folder <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">resources/views/posts</span>, kemudian masukan kode berikut ini di dalamnya.</p>
+                <pre class="bg-black"><code class="language-html text-white">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+    &lt;title&gt;Tambah Data Post - SantriKoding.com&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"&gt;
+&lt;/head&gt;
+&lt;body style="background: lightgray"&gt;
+
+    &lt;div class="container mt-5 mb-5"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-12"&gt;
+                &lt;div class="card border-0 shadow-sm rounded"&gt;
+                    &lt;div class="card-body"&gt;
+                        &lt;form action="{{ route('posts.store') }}" method="POST" enctype="multipart/form-data"&gt;
+                        
+                            @csrf
+
+                            &lt;div class="form-group"&gt;
+                                &lt;label class="font-weight-bold"&gt;GAMBAR&lt;/label&gt;
+                                &lt;input type="file" class="form-control @error('image') is-invalid @enderror" name="image"&gt;
+
+                                @error('image')
+                                    &lt;div class="alert alert-danger mt-2"&gt;
+                                        {{ $message }}
+                                    &lt;/div&gt;
+                                @enderror
+                            &lt;/div&gt;
+
+                            &lt;div class="form-group"&gt;
+                                &lt;label class="font-weight-bold"&gt;JUDUL&lt;/label&gt;
+                                &lt;input type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}" placeholder="Masukkan Judul Post"&gt;
+                            
+                                @error('title')
+                                    &lt;div class="alert alert-danger mt-2"&gt;
+                                        {{ $message }}
+                                    &lt;/div&gt;
+                                @enderror
+                            &lt;/div&gt;
+
+                            &lt;div class="form-group"&gt;
+                                &lt;label class="font-weight-bold"&gt;KONTEN&lt;/label&gt;
+                                &lt;textarea class="form-control @error('content') is-invalid @enderror" name="content" rows="5" placeholder="Masukkan Konten Post"&gt;{{ old('content') }}&lt;/textarea&gt;
+                            
+                                @error('content')
+                                    &lt;div class="alert alert-danger mt-2"&gt;
+                                        {{ $message }}
+                                    &lt;/div&gt;
+                                @enderror
+                            &lt;/div&gt;
+
+                            &lt;button type="submit" class="btn btn-md btn-primary"&gt;SIMPAN&lt;/button&gt;
+                            &lt;button type="reset" class="btn btn-md btn-warning"&gt;RESET&lt;/button&gt;
+
+                            &lt;/form&gt; 
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+                        
+        &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;&lt;/script&gt;
+        &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"&gt;&lt;/script&gt;
+        &lt;script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"&gt;&lt;/script&gt;
+        &lt;script&gt;
+            CKEDITOR.replace( 'content' );
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>         
+                <p>Dari penambahan kode di atas, kita membuat sebuah form yang mana untuk action-nya kita arahkan ke route yang bernama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">posts.store</span>
+                . Route tersebut akan memanggil <em>method</em> di controller yang bernama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">store</span>.</p>
+                <pre class="bg-black"><code class="language-html text-white">&lt;form action="{{ route('posts.store') }}" method="POST" enctype="multipart/form-data"&gt;
+
+	//...
+	
+&lt;form&gt;</code></pre>
+                <p>Jika di perhatikan, pada bagian form terdapat attribute <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">enctype="multipart/form-data"</span>. 
+                Atrritbute tersebut wajib kita tambahkan jika ada sebuah upload file di dalam form-nya.</p>
+                <p>Kemudian di dalam JavaScript, bisa di perhatikan kita melakukan inisisalisasi <em>Rich Text</em> Editor menggunakan <b>CKEditor</b>. Dan kita akan terapkan ke dalam textarea yang memiliki name <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">content</span>.</p>
+                <pre class="bg-black"><code class="language-html text-white">&lt;script&gt;
+    CKEDITOR.replace( 'content' );
+&lt;script&gt;</code></pre>
+                <h1 id="la-7" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 7 - Uji Coba Insert Data Post</h1>
+                <p>Silahkan klik button <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">TAMBAH POST</span> pada halaman posts index atau bisa juga ke URL berikut ini <a href="http://localhost:8080/posts/create">http://localhost:8080/posts/create</a>
+                , jika berhasil maka akan menampilkan hasil berikut ini</p>
+                <img src="img/asjndjawnjdnxa.png">
+                <p>Silahkan masukan data-data yang diinginkan, kemudian klik button <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">SIMPAN</span>. Jika berhasil maka kita akan diarahkan ke halaman posts index dengan menampilkan alert/notifikasi sukses tambah data.</p>
+                <img src="img/aksmdkamskdnwaknd.png">
+                <h1 id="la-8" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 8 - Menambahkan Method Show</h1>
+                <p>Jadi kita akan membuat <em>method</em> baru di dalam controller, method ini kita gunakan untuk mencari data berdasarkan <b>ID</b></p>
+                <p>Silahkan buka file <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">app/Http/Controllers/PostController.php</span>,
+                kemudian ubah semua kode-nya menjadi seperti berikut ini</p>
+                <pre class="bg-black"><code class="language-html text-white">&lt;?php
+
+namespace App\Http\Controllers;
+
+//import Model "Post
+use App\Models\Post;
+
+//return type View
+use Illuminate\View\View;
+
+//return type redirectResponse
+use Illuminate\Http\RedirectResponse;
+
+use Illuminate\Http\Request;
+
+class PostController extends Controller
+{
+    /**
+     * index
+     *
+     * @return void
+     */
+    public function index(): View
+    {
+        //get posts
+        $posts = Post::latest()->paginate(5);
+
+        //render view with posts
+        return view('posts.index', compact('posts'));
+    }
+
+    /**
+     * create
+     *
+     * @return void
+     */
+    public function create(): View
+    {
+        return view('posts.create');
+    }
+
+    /**
+     * store
+     *
+     * @param  mixed $request
+     * @return RedirectResponse
+     */
+    public function store(Request $request): RedirectResponse
+    {
+        //validate form
+        $this->validate($request, [
+            'image'     => 'required|image|mimes:jpeg,jpg,png|max:2048',
+            'title'     => 'required|min:5',
+            'content'   => 'required|min:10'
+        ]);
+
+        //upload image
+        $image = $request->file('image');
+        $image->storeAs('public/posts', $image->hashName());
+
+        //create post
+        Post::create([
+            'image'     => $image->hashName(),
+            'title'     => $request->title,
+            'content'   => $request->content
+        ]);
+
+        //redirect to index
+        return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Disimpan!']);
+    }
+    
+    /**
+     * show
+     *
+     * @param  mixed $id
+     * @return View
+     */
+    public function show(string $id): View
+    {
+        //get post by ID
+        $post = Post::findOrFail($id);
+
+        //render view with post
+        return view('posts.show', compact('post'));
+    }
+}</code></pre>
+                <p>Dari penambahan kode di atas, kita menambahkan <em>method</em> baru dengan nama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">show</span>
+                dan di dalamnya kita berikan parameter <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">$id</span>. 
+                Parameter tersebut akan bernilai dinamis, yaitu sesuai <b>ID</b> data yang di panggil.</p>
+                <pre class="bg-black"><code class="language-html text-white">public function show(string $id): View
+{
+
+	//...
+	
+}</code></pre>
+                <p>Di dalam <em>method</em> di atas, kita melakukan get data post berdasarkan variable <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">$id</span> yang ada di dalam parameter.</p>
+                <pre class="bg-black"><code class="language-html text-white">//get post by ID
+$post = Post::findOrFail($id);</code></pre>
+                <p>Jika data berhasil ditemukan, maka kita akan kirimkan ke dalam view menggunakan fungsi <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">compact</span>.</p>
+                <pre class="bg-black"><code class="language-html text-white">//render view with post
+return view('posts.show', compact('post'));</code></pre>
+                <h1 id="la-9" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 9 - Membuat View Detail Post</h1>
+                <p>Sekarang kita lanjut menampilkan data yang dikirimkan oleh controller di dalam view. Silahkan teman-teman buat file baru dengan nama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">show.blade.php</span> di dalam folder <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">resources/view/posts</span>
+                , kemudian masukan kode ini di dalamnya.</p>
+                <pre class="bg-black"><code class="language-html text-white">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+    &lt;title&gt;Detail Data Post - SantriKoding.com&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"&gt;
+&lt;/head&gt;
+&lt;body style="background: lightgray"&gt;
+
+    &lt;div class="container mt-5 mb-5"&gt;
+        &lt;div class="row justify-content-center"&gt;
+            &lt;div class="col-md-8"&gt;
+                &lt;div class="card border-0 shadow-sm rounded"&gt;
+                    &lt;div class="card-body"&gt;
+                        &lt;img src="{{ asset('storage/posts/'.$post->image) }}" class="w-100 rounded"&gt;
+                        &lt;hr&gt;
+                        &lt;h4&gt;{{ $post->title }}&lt;/h4&gt;
+                        &lt;p class="tmt-3"&gt;
+                            {!! $post->content !!}
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                <p>Karena data yang dikirimkan oleh controller dalam bentuk object, maka kita tinggal memanggil nama field-nya saja.</p>
+                <p>Contohnya, untuk memanggil gambar kita bisa seperti ini.</p>
+                <pre class="bg-black"><code class="language-html text-white">&lt;img src="{{ asset('storage/posts/'.$post->image) }}" class="w-100 rounded"&gt;</code></pre>
+                <p>Atau untuk memanggil <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">title</span> kita bisa menggunakan kode seperti berikut ini.</p>
+                <pre class="bg-black"><code class="language-html text-white">&lt;h4&gt;{{ $post->title }}&lt;/h4&gt;</code></pre>
+                <p>Dan terakhir, untuk <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">content</span> karena isinya mengandung sintaks <b>HTML</b>, maka kita perlu menampilkannya dengan sintaks khusus, yaitu seperti ini</p>
+                <pre class="bg-black"><code class="language-html text-white">{!! $post->content !!}</code></pre>
+                <h1 id="la-10" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 10 - Uji Coba Menampilkan Detail Data Post</h1>
+                <p>Silahkan klik button <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">SHOW</span> di salah satu data yang ada pada halaman <em>posts index</em>, jika berhasil maka akan menampilkan hasil seperti berikut ini.</p>
+                <img src="img/jjuwhjnsnwkn.png">
+                <h1 id="la-11" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 11 - Menambahkan Method Edit dan Update</h1>
+                <p>Kali ini kita akan menambahkan 2 method di dalam <em>controller</em>, method tersebut adalah : </p>
+                <ul>
+                    <li class=""><span class="text-red-600">function edit</span> - method yang digunakan untuk menampilkan halaman form edit data.</li>
+                    <li class=""><span class="text-red-600">function update</span> - method yang digunakan untuk memproses data yang akan di update ke dalam database.</li>
+                </ul>
+                <p>Silahkan buka file <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">app/Http/Controllers/PostController.php</span>, kemudian ubah semua kode-nya menjadi seperti berikut ini.</p>
+                <pre class="bg-black"><code class="language-html text-white">&lt;?php
+
+namespace App\Http\Controllers;
+
+//import Model "Post
+use App\Models\Post;
+
+use Illuminate\Http\Request;
+
+//return type View
+use Illuminate\View\View;
+
+//return type redirectResponse
+use Illuminate\Http\RedirectResponse;
+
+//import Facade "Storage"
+use Illuminate\Support\Facades\Storage;
+
+class PostController extends Controller
+{
+    /**
+     * index
+     *
+     * @return View
+     */
+    public function index(): View
+    {
+        //get posts
+        $posts = Post::latest()->paginate(5);
+
+        //render view with posts
+        return view('posts.index', compact('posts'));
+    }
+
+    /**
+     * index
+     *
+     * @return View
+     */
+    public function create(): View
+    {
+        return view('posts.create');
+    }
+
+    /**
+     * store
+     *
+     * @param  mixed $request
+     * @return RedirectResponse
+     */
+    public function store(Request $request): RedirectResponse
+    {
+        //validate form
+        $this->validate($request, [
+            'image'     => 'required|image|mimes:jpeg,jpg,png|max:2048',
+            'title'     => 'required|min:5',
+            'content'   => 'required|min:10'
+        ]);
+
+        //upload image
+        $image = $request->file('image');
+        $image->storeAs('public/posts', $image->hashName());
+
+        //create post
+        Post::create([
+            'image'     => $image->hashName(),
+            'title'     => $request->title,
+            'content'   => $request->content
+        ]);
+
+        //redirect to index
+        return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Disimpan!']);
+    }
+    
+    /**
+     * show
+     *
+     * @param  mixed $id
+     * @return View
+     */
+    public function show(string $id): View
+    {
+        //get post by ID
+        $post = Post::findOrFail($id);
+
+        //render view with post
+        return view('posts.show', compact('post'));
+    }
+  
+    /**
+     * edit
+     *
+     * @param  mixed $id
+     * @return View
+     */
+    public function edit(string $id): View
+    {
+        //get post by ID
+        $post = Post::findOrFail($id);
+
+        //render view with post
+        return view('posts.edit', compact('post'));
+    }
+    
+    /**
+     * update
+     *
+     * @param  mixed $request
+     * @param  mixed $id
+     * @return RedirectResponse
+     */
+    public function update(Request $request, $id): RedirectResponse
+    {
+        //validate form
+        $this->validate($request, [
+            'image'     => 'image|mimes:jpeg,jpg,png|max:2048',
+            'title'     => 'required|min:5',
+            'content'   => 'required|min:10'
+        ]);
+
+        //get post by ID
+        $post = Post::findOrFail($id);
+
+        //check if image is uploaded
+        if ($request->hasFile('image')) {
+
+            //upload new image
+            $image = $request->file('image');
+            $image->storeAs('public/posts', $image->hashName());
+
+            //delete old image
+            Storage::delete('public/posts/'.$post->image);
+
+            //update post with new image
+            $post->update([
+                'image'     => $image->hashName(),
+                'title'     => $request->title,
+                'content'   => $request->content
+            ]);
+
+        } else {
+
+            //update post without image
+            $post->update([
+                'title'     => $request->title,
+                'content'   => $request->content
+            ]);
+        }
+
+        //redirect to index
+        return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Diubah!']);
+    }
+}</code></pre>
+            <p>Dari perubahan kode di atas, pertama-tama kita import dulu <em>Facade</em> <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">Storage</span>
+            dari <b>Laravel</b>. Ini akan kita gunakan nantinya untuk menghapus file gambar yang ada di dalam <b>Laravel</b>.</p>
+            <pre class="bg-black"><code class="language-html text-white">//import Facade "Storage"
+use Illuminate\Support\Facades\Storage;</code></pre>
+            <p>Kemudian kita buat method baru dengan nama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">edit</span> dan di dalamnya kita berikan parameter <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">$id</span>. 
+            Method ini kode-nya hampir sama dengan method <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">show</span>, karena tujuannya sama-sama untuk menampilkan detail data berdasarkan <b>ID</b>.</p>
+            <pre class="bg-black"><code class="language-html text-white">public function edit(string $id): View
+{
+
+	//...
+	
+}</code></pre>
+            <p>Di dalam method tersebut, kita lakukan get data post berdasarkan <b>ID</b> yang diambil dari parameter atau variable <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">$id</span></p>
+            <pre class="bg-black"><code class="language-html text-white">//get post by ID
+$post = Post::findOrFail($id);</code></pre>
+            <p>Jika data ditemukan, maka kita kirimkan ke dalam view menggunakan fungsi <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">compact</span>.</p>
+            <pre class="bg-black"><code class="language-html text-white">//render view with post
+return view('posts.edit', compact('post'));</code></pre>
+            <p>Setelah itu, kita buat method lagi dengan nama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">update</span>. 
+            Method inilah yang digunakan untuk memproses data yang akan diupdate ke dalam database.</p>
+            <pre class="bg-black"><code class="language-html text-white">public function update(Request $request, $id): RedirectResponse
+{
+
+	//...
+	
+}</code></pre>
+            <p>Di dalam method tersebut, pertama-tama kita buat validasi terlebih dahulu, sama seperti yang ada di dalam method store. Beda-nya hanya pada validasi 
+                <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">image</span> kita tidak memberikan <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">rule</span> <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">required</span>,
+                karena image disini tidak wajib di-update data-nya.
+            </p>
+            <pre class="bg-black"><code class="language-html text-white">//validate form
+$this->validate($request, [
+    'image'     => 'image|mimes:jpeg,jpg,png|max:2048',
+    'title'     => 'required|min:5',
+    'content'   => 'required|min:10'
+]);</code></pre>
+            <p>Dari penambahan validasi di atas, kurang lebih seperti berikut ini penjelasannya.</p>
+            <div class="relative overflow-x-auto">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-white-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-gray-700 dark:text-white">
+                                KEY
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-gray-700 dark:text-white">
+                                VALIDATION
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-gray-700 dark:text-white">
+                                KETERANGAN
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                image
+                            </th>
+                            <td class="px-6 py-4">
+                                image
+                            </td>
+                            <td class="px-6 py-4">
+                                field harus berupa gambar
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                
+                            </th>
+                            <td class="px-6 py-4">
+                                mimes:jpeg,jpg,png
+                            </td>
+                            <td class="px-6 py-4">
+                                files harus memiliki extensi jpeg,jpg,png
+                            </td>
+                        </tr>
+                        <tr class="bg-white dark:bg-gray-800">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                
+                            </th>
+                            <td class="px-6 py-4">
+                                max:2048
+                            </td>
+                            <td class="px-6 py-4">
+                                files maksimal berukuran 2048 Kb / 2Mb
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                title
+                            </th>
+                            <td class="px-6 py-4">
+                                required
+                            </td>
+                            <td class="px-6 py-4">
+                                files wajib diisi
+                            </td>
+                        </tr>
+                        <tr class="bg-white dark:bg-gray-800">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                
+                            </th>
+                            <td class="px-6 py-4">
+                                min:5
+                            </td>
+                            <td class="px-6 py-4">
+                                files minimal memiliki 5 huruf/karakter
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                content
+                            </th>
+                            <td class="px-6 py-4">
+                                required
+                            </td>
+                            <td class="px-6 py-4">
+                                files wajib diisi
+                            </td>
+                        </tr>
+                        <tr class="bg-white dark:bg-gray-800">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                
+                            </th>
+                            <td class="px-6 py-4">
+                                min:10
+                            </td>
+                            <td class="px-6 py-4">
+                                files minimal memiliki 10 huruf/karakter
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Jika data yang dikirimkan sudah sesuai dengan validasi di atas, maka kita lanjutkan dengan mencari data berdasarkan <b>ID</b> yang diambil dari parameter.</p>
+            <pre class="bg-black"><code class="language-html text-white">//get post by ID
+$post = Post::findOrFail($id);</code></pre>
+            <p>Tujuannya, agar nanti kita bisa mengambil object dari data di atas dan bisa digunakan untuk melakukan proses update data.</p>
+            <p>Setelah itu, kita membuat kondisi untuk memastikan apakah ada sebuah request file yang bernama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">image</span>.</p>
+            <pre class="bg-black"><code class="language-html text-white">//check if image is uploaded
+if ($request->hasFile('image')) {
+
+	//upload gambar baru
+	
+	//hapus gambar lama
+	
+	//update data ke database
+	
+} else {
+
+	//update data ke database
+
+}</code></pre>
+            <p>Dari kode diatas, jika ada file dengan nama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">image</span>, Artinya
+            kita akan melakukan upload gambar baru.</p>
+            <pre class="bg-black"><code class="language-html text-white">//upload new image
+$image = $request->file('image');
+$image->storeAs('public/posts', $image->hashName());</code></pre>
+            <p>Kemudian kita hapus gambar yang lama di dalam <b>Laravel</b> menggunakan <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">storage::delete</span>.</p>
+            <pre class="bg-black"><code class="language-html text-white">//delete old image
+ Storage::delete('public/posts/'.$post->image);</code></pre>
+            <p>Dan kita lakukan update data ke dalam database dengan menyertakan gambar yang baru.</p>
+            <pre class="bg-black"><code class="language-html text-white">//update post with new image
+$post->update([
+    'image'     => $image->hashName(),
+    'title'     => $request->title,
+    'content'   => $request->content
+]);</code></pre>
+            <p>Tapi jika tidak ada request file dengan nama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">image</span>, maka kita cukup melakukan update data
+            ke dalam database untuk <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">title</span> dan <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">content</span> saja.</p>
+            <pre class="bg-black"><code class="language-html text-white">//update post without image
+$post->update([
+    'title'     => $request->title,
+    'content'   => $request->content
+]);</code></pre>
+            <p>Setelah itu kita redirect atau arahkan ke route yang bernama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">posts.index</span>
+            dengan menambahkan session flash data dengan key <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">success</span> dan memiliki value
+            <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">Data Berhasil Diubah!</span>.</p>
+            <pre class="bg-black"><code class="language-html text-white">//redirect to index
+return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Diubah!']);</code></pre>
+            <h1 id="la-12" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 12 - Membuat View From Edit</h1>
+            <p>Setelah berhasil menambahkan 2 method di dalam controller, maka sekarang kita akan lanjutkan membuat view yang digunakan untuk menampilkan halaman form edit</p>
+            <p>Silahkan buat file baru dengan nama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">edit.blade.php</span> di dalam folder <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">resources/views/posts</span>,
+            kemudian masukan kode berikut ini di dalamnya.</p>
+            <pre class="bg-black"><code class="language-html text-white">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+    &lt;title&gt;Edit Data Post - SantriKoding.com&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"&gt;
+&lt;/head&gt;
+&lt;body style="background: lightgray"&gt;
+
+    &lt;div class="container mt-5 mb-5"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-12"&gt;
+                &lt;div class="card border-0 shadow-sm rounded"&gt;
+                    &lt;div class="card-body"&gt;
+                        &lt;form action="{{ route('posts.update', $post->id) }}" method="POST" enctype="multipart/form-data"&gt;
+                            @csrf
+                            @method('PUT')
+                        
+                            &lt;div class="form-group"&gt;
+                                &lt;label class="font-weight-bold"&gt;GAMBAR&lt;/label&gt;
+                                &lt;input type="file" class="form-control" name="image"&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="form-group"&gt;
+                                &lt;label class="font-weight-bold"&gt;JUDUL&lt;/label&gt;
+                                &lt;input type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title', $post->title) }}" placeholder="Masukkan Judul Post"&gt;
+                            
+                                @error('title')
+                                    &lt;div class="alert alert-danger mt-2"&gt;
+                                        {{ $message }}
+                                    &lt;/div&gt;
+                                @enderror
+                            &lt;/div&gt;
+
+                           &lt;div class="form-group"&gt;
+                               &lt;label class="font-weight-bold"&gt;KONTEN&lt;/label&gt;
+                               &lt;textarea class="form-control @error('content') is-invalid @enderror" name="content" rows="5" placeholder="Masukkan Konten Post"&gt;{{ old('content', $post->content) }}&lt;/textarea&gt;
+                           
+                               @error('content')
+                                   &lt;div class="alert alert-danger mt-2"&gt;
+                                       {{ $message }}
+                                   &lt;/div&gt;
+                               @enderror
+                           &lt;/div&gt;
+
+                            &lt;button type="submit" class="btn btn-md btn-primary"&gt;UPDATE&lt;/button&gt;
+                            &lt;button type="reset" class="btn btn-md btn-warning"&gt;RESET&lt;/button&gt;
+
+                        &lt;/form&gt; 
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+        CKEDITOR.replace( 'content' );
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p>Pada penambahan kode di atas, untuk menampilkan data pada form, kita cukup memanggil object-nya dan menaruh di dalam attribute <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">value</span>
+            dan helper <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">old</span>. Contohnya seperti berikut ini</p>
+            <pre class="bg-black"><code class="language-html text-white"></code>value="{{ old('title', $post->title) }}"</pre>
+            <p>Dan karena <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">content</span> berada di dalam textarea, maka kita perlu menggunakan attribute <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">value</span> untuk menampilkan-nya.</p>
+            <pre class="bg-black"><code class="language-html text-white"></code>{{ old('content', $post->content) }}</pre>
+            <p>Kemudian untuk form action kita arahkan ke dalam route yang bernama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">posts.update</span> dan kita berikan parameter <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">ID</span>.</p>
+            <pre class="bg-black"><code class="language-html text-white"></code>&lt;form&gt; action="{{ route('posts.update', $post->id) }}" method="POST" enctype="multipart/form-data">
+
+	//...
+	
+&lt;/form&gt;</pre>
+            <p>Route <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">posts.update</span> akan otomatis mengarah ke dalam method <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">update</span> yang ada di dalam controller.</p>
+            <p>Dan jangan lupa, untuk form edit kita wajib menambahkan <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">@method('PUT')</span>. Itu bertujuan untuk memberitahu bahwa method yang akan digunakan adalah <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">PUT</span>.</p>
+            <h1 id="la-13" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 13 - Uji Coba Edit dan Update Data</h1>
+            <p>Silahkan klik button <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">EDIT</span> yang ada pada halaman <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">posts.index</span>, jika berhasil maka akan menampilkan halaman form edit yang kurang lebih seperti berikut ini.</p>
+            <img src="img/kuisaosoaks.png">
+            <p>Silahkan coba update isi di dalamnya sesuai dengan keinginan dan klik button <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">Update</span>, jika berhasil maka kurang lebih seperti berikut ini.</p>
+            <img src="img/vewausduaw.png">
+            <h1 id="la-14" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 14 - Menambahkan Method Destroy</h1>
+            <p>Disini kita akan menambahkan method baru di dalam controller post, method ini nanti kita gunakan untuk menghapus data dari database melalui model dan juga menghapus gambar dari folder storage <b>Laravel</b>.</p>
+            <p>Silahkan buka file <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">app/Http/Controllers/PostController.php</span>, kemudian ubah semua kode-nya menjadi seperti berikut ini.</p>
+            <pre class="bg-black"><code class="language-html text-white">&lt;?php
+
+namespace App\Http\Controllers;
+
+//import Model "Post
+use App\Models\Post;
+
+use Illuminate\Http\Request;
+
+//return type View
+use Illuminate\View\View;
+
+//return type redirectResponse
+use Illuminate\Http\RedirectResponse;
+
+//import Facade "Storage"
+use Illuminate\Support\Facades\Storage;
+
+class PostController extends Controller
+{    
+    /**
+     * index
+     *
+     * @return View
+     */
+    public function index(): View
+    {
+        //get posts
+        $posts = Post::latest()->paginate(5);
+
+        //render view with posts
+        return view('posts.index', compact('posts'));
+    }
+
+    /**
+     * create
+     *
+     * @return View
+     */
+    public function create(): View
+    {
+        return view('posts.create');
+    }
+ 
+    /**
+     * store
+     *
+     * @param  mixed $request
+     * @return RedirectResponse
+     */
+    public function store(Request $request): RedirectResponse
+    {
+        //validate form
+        $this->validate($request, [
+            'image'     => 'required|image|mimes:jpeg,jpg,png|max:2048',
+            'title'     => 'required|min:5',
+            'content'   => 'required|min:10'
+        ]);
+
+        //upload image
+        $image = $request->file('image');
+        $image->storeAs('public/posts', $image->hashName());
+
+        //create post
+        Post::create([
+            'image'     => $image->hashName(),
+            'title'     => $request->title,
+            'content'   => $request->content
+        ]);
+
+        //redirect to index
+        return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Disimpan!']);
+    }
+    
+    /**
+     * show
+     *
+     * @param  mixed $id
+     * @return View
+     */
+    public function show(string $id): View
+    {
+        //get post by ID
+        $post = Post::findOrFail($id);
+
+        //render view with post
+        return view('posts.show', compact('post'));
+    }
+
+    /**
+     * edit
+     *
+     * @param  mixed $id
+     * @return View
+     */
+    public function edit(string $id): View
+    {
+        //get post by ID
+        $post = Post::findOrFail($id);
+
+        //render view with post
+        return view('posts.edit', compact('post'));
+    }
+        
+    /**
+     * update
+     *
+     * @param  mixed $request
+     * @param  mixed $id
+     * @return RedirectResponse
+     */
+    public function update(Request $request, $id): RedirectResponse
+    {
+        //validate form
+        $this->validate($request, [
+            'image'     => 'image|mimes:jpeg,jpg,png|max:2048',
+            'title'     => 'required|min:5',
+            'content'   => 'required|min:10'
+        ]);
+
+        //get post by ID
+        $post = Post::findOrFail($id);
+
+        //check if image is uploaded
+        if ($request->hasFile('image')) {
+
+            //upload new image
+            $image = $request->file('image');
+            $image->storeAs('public/posts', $image->hashName());
+
+            //delete old image
+            Storage::delete('public/posts/'.$post->image);
+
+            //update post with new image
+            $post->update([
+                'image'     => $image->hashName(),
+                'title'     => $request->title,
+                'content'   => $request->content
+            ]);
+
+        } else {
+
+            //update post without image
+            $post->update([
+                'title'     => $request->title,
+                'content'   => $request->content
+            ]);
+        }
+
+        //redirect to index
+        return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Diubah!']);
+    }
+
+    /**
+     * destroy
+     *
+     * @param  mixed $post
+     * @return void
+     */
+    public function destroy($id): RedirectResponse
+    {
+        //get post by ID
+        $post = Post::findOrFail($id);
+
+        //delete image
+        Storage::delete('public/posts/'. $post->image);
+
+        //delete post
+        $post->delete();
+
+        //redirect to index
+        return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Dihapus!']);
+    }
+}</code></pre>
+            <p>Dari perubahan kode di atas, kita menambahkan method baru dengan nama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">destroy</span>
+            dan pada parameternya kita berikan <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">$id</span>.</p>
+            <pre class="bg-black"><code class="language-html text-white">public function destroy($id): RedirectResponse
+{
+
+	//...
+	
+}</code></pre>
+            <p>Di dalam method tersebut, pertama-tama kita melakukan get data post berdasarkan <b>ID</b> yang ada di parameter atau <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">$id</span></p>
+            <pre class="bg-black"><code class="language-html text-white">//get post by ID
+$post = Post::findOrFail($id);</code></pre>
+            <p>Jika data ditemukan, maka kita lanjutkan melakukan delete gambar yang ada di dalam folder <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">storage/app/public/posts</span>.</p>
+            <pre class="bg-black"><code class="language-html text-white">//delete image
+Storage::delete('public/posts/'. $post->image);</code></pre>
+            <p>Setelah gambar berhasil di delete, kita lanjutkan melakukan delete data di dalam database.</p>
+            <pre class="bg-black"><code class="language-html text-white">//delete post
+$post->delete();</code></pre>
+            <p>Jika data sudah berhasil didelete, maka kita akan redirect atau arahkan ke dalam route yang bernama <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">posts.index</span> dengan memberikan session flash dengan key <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">success</span>
+            dan berisi value <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">Data Berhasil Dihapus!</span>.</p>
+            <pre class="bg-black"><code class="language-html text-white">//redirect to index
+return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Dihapus!']);</code></pre>
+            <h1 id="la-15" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 15 - Uji Coba Delete Data</h1>
+            <p>Silahkan klik button <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">DELETE</span> disalah satu data, jika berhasil maka akan menampilkan sebuah alert konfirmasi.</p>
+            <img src="img/hsuahusjaw.png">
+            <p>Silahkan klik <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">OK</span>, maka data akan berhasil dihapus data database.</p>
+            <img src="img/powpoadspdawd.png">
+            <p>Sampai disini untuk materi <b>Code Jam Academy Sesi 1</b> jika ada yang kurang paham/masih bingung bisa chat <a href="https://wa.me/+62895363185264">whatsapp</a></p>
+            <div class="p-1 border-l-8 border-orange-500 bg-orange-100">
+                <p class="text-xl pl-4 font-medium leading-relaxed text-gray-900 dark:text-black"><span class="font-bold">Source Code</span> : <a href="https://github.com/RickyPrima30/cja-lar10-crud">github.com/RickyPrima30/cja-lar10-crud</a></p>
+            </div>
+            </article>
+        </div>
+    </main>
+
+
+    <footer class="bg-gray-50 dark:bg-gray-800 antialiased">
+        <div class="p-4 py-6 mx-auto max-w-screen-xl md:p-8 lg:p-10">
+
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+            <div class="text-center flex items-center justify-center">
+                <img src="img/yashxjajHJBhashda21.png" class="w-20 mb-4">
+            </div>
+            <span class="block text-sm text-center text-gray-500 dark:text-gray-400">© 2023 <a href="#"
+                    class="hover:underline">
+                    Himpunan Mahasiswa Teknik Informatika™</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</body>
+
+</html>
