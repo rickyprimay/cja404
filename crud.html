@@ -303,7 +303,7 @@ Route::resource('/posts', \App\Http\Controllers\PostController::class);</code></
     @endif
 &lt;script&gt;</code></pre>
                 <h1 id="la-4" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 4 - Uji Coba Menampilkan Data</h1>
-                <p>Sekarang silahkan jalankan projectnya dengan mengakses <a href="http://localhost:8080/posts">http://localhost:8080/posts</a>
+                <p>Sekarang silahkan jalankan projectnya dengan mengakses <a href="http://127.0.0.1:8000/posts">http://127.0.0.1:8000/posts</a>
                 di dalam <em>browser</em>, jika berhasil maka hasilnya kurang lebih akan seperti ini</p>
                 <img src="img/najnwjdsmaw.png">
                 <p>Di atas masih menampilkan pesan <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">Data Posts belum Tersedia</span>
@@ -620,7 +620,7 @@ return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Disim
     CKEDITOR.replace( 'content' );
 &lt;script&gt;</code></pre>
                 <h1 id="la-7" class="text-3xl leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Langkah 7 - Uji Coba Insert Data Post</h1>
-                <p>Silahkan klik button <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">TAMBAH POST</span> pada halaman posts index atau bisa juga ke URL berikut ini <a href="http://localhost:8080/posts/create">http://localhost:8080/posts/create</a>
+                <p>Silahkan klik button <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">TAMBAH POST</span> pada halaman posts index atau bisa juga ke URL berikut ini <a href="http://127.0.0.1:8000/posts/create">http://127.0.0.1:8000/posts/create</a>
                 , jika berhasil maka akan menampilkan hasil berikut ini</p>
                 <img src="img/asjndjawnjdnxa.png">
                 <p>Silahkan masukan data-data yang diinginkan, kemudian klik button <span class="text-yellow-400 dark:text-red-600 bg-gray-600 dark:bg-black rounded-md px-2">SIMPAN</span>. Jika berhasil maka kita akan diarahkan ke halaman posts index dengan menampilkan alert/notifikasi sukses tambah data.</p>
